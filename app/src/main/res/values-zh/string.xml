@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">向量传送门</string>
+    <string name="entrance_manager_title">入口管理器</string>
+    <string name="entrance_a_name">向量传送门</string>
+    <string name="entrance_b_name">生成传送门</string>
+    <string name="entrance_c_name">生成传送门库</string>
+    <string name="entrance_d_name">加入任务清单</string>
+    <string name="entrance_e_name">向量传送侧门</string>
+    <string name="entrance_f_name">调用Termux操作</string>
+</resources>

@@ -1,0 +1,125 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tenfrend.svgportal">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.Light">
+
+        <!-- OpenPathActivity (透明) -->
+        <activity
+            android:name=".OpenPathActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 入口分发 Activity (透明) -->
+        <activity
+            android:name=".Entrances"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 六个别名，每个都有自己的图标和标签，指向 Entrances -->
+        <activity-alias
+            android:name=".EntranceA"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_entrance_a"
+            android:label="@string/entrance_a_name"
+            android:targetActivity=".Entrances">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".EntranceB"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_entrance_b"
+            android:label="@string/entrance_b_name"
+            android:targetActivity=".Entrances">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".EntranceC"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_entrance_c"
+            android:label="@string/entrance_c_name"
+            android:targetActivity=".Entrances">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".EntranceD"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_entrance_d"
+            android:label="@string/entrance_d_name"
+            android:targetActivity=".Entrances">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".EntranceE"
+            android:enabled="false"
+            android:exported="true"
+            android:icon="@drawable/ic_entrance_e"
+            android:label="@string/entrance_e_name"
+            android:targetActivity=".Entrances">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".EntranceF"
+            android:enabled="true"
+            android:exported="true"
+            android:icon="@drawable/ic_entrance_f"
+            android:label="@string/entrance_f_name"
+            android:targetActivity=".Entrances">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity-alias>
+
+        <!-- 主界面 (亮色系统主题) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
