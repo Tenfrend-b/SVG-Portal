@@ -48,7 +48,8 @@ graph TD
 3. 软件目前的主类用于开关软件入口，但除了了EntranceA之外其他暂时都没实现，所以这算是未来的大饼吧~
 4. 本软件叫向量传送门是因为SVG是矢量图，而软件通过对SVG的特殊理解实现了目录跳转，就像让这张图片成为了传送门一样。
 5. 本软件代码99% AI生成（以及引用了很多我看不懂的大佬代码(◉ω◉)），所以如果发现了什么bug欢迎报上来哈。
-6. 十分感谢termux-am项目！他们开发的IActivityManager真的帮大忙了！https://github.com/termux/TermuxAm
-7. image toolbox可以把任意图片转换为svg，十分推荐使用：https://github.com/T8RIN/ImageToolbox
+6. 字节的开源图标库为本项目提供了支持（0.2版本的入口B）https://iconpark.oceanengine.com/official
+7. 十分感谢termux-am项目！他们开发的IActivityManager真的帮大忙了！https://github.com/termux/TermuxAm
+8. image toolbox可以把任意图片转换为svg，十分推荐使用：https://github.com/T8RIN/ImageToolbox
 
 祝您使用愉快！
