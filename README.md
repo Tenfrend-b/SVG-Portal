@@ -51,5 +51,6 @@ graph TD
 6. 字节的开源图标库为本项目提供了支持（0.2版本的入口B）https://iconpark.oceanengine.com/official
 7. 十分感谢termux-am项目！他们开发的IActivityManager真的帮大忙了！https://github.com/termux/TermuxAm
 8. image toolbox可以把任意图片转换为svg，十分推荐使用：https://github.com/T8RIN/ImageToolbox
+9. 感谢编译器提供者https://github.com/AndroidIDEOfficial/AndroidIDE 与国内加速版提供者https://gitee.com/caofangkuai/androidide-fast
 
 祝您使用愉快！
